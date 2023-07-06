@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Modern Font Stacks
+ * Plugin Name: Modern Font Stacks for WP
  * Plugin URI: https://csaba.blog/modern-font-stacks-in-wordpress
  * Description: This lightweight plugin integrates the Modern Font Stacks project into WordPress (block) themes. These are system font stacks organized by typeface classification for every modern OS. The fastest fonts available. No downloading, no layout shifts, no flashes — just instant renders.
  * Requires at least: 6.2
@@ -10,9 +10,9 @@
  * Author URI: https://littlebigthings.be
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- * Text Domain: mfs
+ * Text Domain: mfswp
  *
- * @package mfs
+ * @package mfswp
  */
 
 /*
@@ -23,7 +23,7 @@
  * @param object $theme_json The original theme JSON data.
  * @return object The modified theme JSON data.
  */
-function mfs_add_modern_font_stacks( $theme_json ) {
+function mfswp_add_modern_font_stacks( $theme_json ) {
 	
 	// get current theme.json data
 	$current_data = $theme_json->get_data();
@@ -35,7 +35,7 @@ function mfs_add_modern_font_stacks( $theme_json ) {
 	$current_font_families = $current_data['settings']['typography']['fontFamilies']['theme'];
 
 	// create the modern font stacks
-	$font_families = mfs_get_modern_font_stacks();
+	$font_families = mfswp_get_modern_font_stacks();
 
 	// merge all font families
 	if ( is_array( $current_font_families ) ) {
@@ -56,14 +56,14 @@ function mfs_add_modern_font_stacks( $theme_json ) {
 }
 
 // for the filter to work properly, it must be run after theme setup
-function mfs_apply_theme_json_theme_filter() {
+function mfswp_apply_theme_json_theme_filter() {
 
 	// check to make sure the theme has a theme.json file
 	if ( wp_theme_has_theme_json() ) {
-		add_filter( 'wp_theme_json_data_theme', 'mfs_add_modern_font_stacks' );
+		add_filter( 'wp_theme_json_data_theme', 'mfswp_add_modern_font_stacks' );
 	}
 }
-add_action( 'after_setup_theme', 'mfs_apply_theme_json_theme_filter' );
+add_action( 'after_setup_theme', 'mfswp_apply_theme_json_theme_filter' );
 
 /*
  * Modern Font Stacks from https://modernfontstacks.com or https://github.com/system-fonts/modern-font-stacks
@@ -72,83 +72,83 @@ add_action( 'after_setup_theme', 'mfs_apply_theme_json_theme_filter' );
  * 
  * @since 1.0
  */
-function mfs_get_modern_font_stacks() {
+function mfswp_get_modern_font_stacks() {
 
 	$modern_font_stacks = array (
 		array (
 			'fontFamily' => "system-ui, sans-serif",
 			'name' => "System UI",
-			'slug' => "mfs-system-ui"
+			'slug' => "mfswp-system-ui"
 		),
 		array (
 			'fontFamily' => "Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif",
 			'name' => "Transitional",
-			'slug' => "mfs-transitional"
+			'slug' => "mfswp-transitional"
 		),
 		array (
 			'fontFamily' => "'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif",
 			'name' => "Old Style",
-			'slug' => "mfs-old-style"
+			'slug' => "mfswp-old-style"
 		),
 		array(
 			'fontFamily' => "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif",
 			'name' => "Humanist",
-			'slug' => "mfs-humanist"
+			'slug' => "mfswp-humanist"
 		),
 		array(
 			'fontFamily' => "Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif",
 			'name' => "Geometric Humanist",
-			'slug' => "mfs-geometric-humanist"
+			'slug' => "mfswp-geometric-humanist"
 		),
 		array(
 			'fontFamily' => "Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif",
 			'name' => "Classical Humanist",
-			'slug' => "mfs-classical-humanist"
+			'slug' => "mfswp-classical-humanist"
 		),
 		array(
 			'fontFamily' => "Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif",
 			'name' => "Neo-Grotesque",
-			'slug' => "mfs-neo-grotesque"
+			'slug' => "mfswp-neo-grotesque"
 		),
 		array(
 			'fontFamily' => "'Nimbus Mono PS', 'Courier New', monospace",
 			'name' => "Monospace Slab Serif",
-			'slug' => "mfs-monospace-slab-serif"
+			'slug' => "mfswp-monospace-slab-serif"
 		),
 		array(
 			'fontFamily' => "ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace",
 			'name' => "Monospace Code",
-			'slug' => "mfs-monospace-code"
+			'slug' => "mfswp-monospace-code"
 		),
 		array(
 			'fontFamily' => "Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif",
 			'name' => "Industrial",
-			'slug' => "mfs-industrial"
+			'slug' => "mfswp-industrial"
 		),
 		array(
 			'fontFamily' => "ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif",
 			'name' => "Rounded Sans",
-			'slug' => "mfs-rounded-sans"
+			'slug' => "mfswp-rounded-sans"
 		),
 		array(
 			'fontFamily' => "Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif",
 			'name' => "Slab Serif",
-			'slug' => "mfs-slab-serif"
+			'slug' => "mfswp-slab-serif"
 		),
 		array(
 			'fontFamily' => "Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif",
 			'name' => "Antique",
-			'slug' => "mfs-antique"
+			'slug' => "mfswp-antique"
 		),
 		array(
 			'fontFamily' => "Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif",
 			'name' => "Didone",
-			'slug' => "mfs-didone"
+			'slug' => "mfswp-didone"
 		),
 		array(
 			'fontFamily' => "'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive",
 			'name' => "Handwritten",
-			'slug' => "mfs-handwritten"
+			'slug' => "mfswp-handwritten"
 		)
 	);
 
