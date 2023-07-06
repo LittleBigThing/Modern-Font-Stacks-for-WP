@@ -21,3 +21,6 @@ The stacks originate from the [Modern Font Stacks](https://modernfontstacks.com)
 * Handwritten
 
 See the [repository of the project](https://github.com/system-fonts/modern-font-stacks) to preview the stacks.
+
+![WordPress example Transition font stack](https://github.com/LittleBigThing/Modern-Font-Stacks-for-WP/assets/5901923/7230c7c1-7758-4d23-928c-2bccf1658eba)
+
