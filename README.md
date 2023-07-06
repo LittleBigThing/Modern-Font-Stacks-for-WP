@@ -1,4 +1,4 @@
-# Modern Font Stacks
+# Modern Font Stacks for WordPress
 
 This plugin adds a collection font stacks to WordPress themes that have a ``theme.json`` file. After plugin activation, the fonts are available to select in the Site Editor under typography. 
 
