@@ -76,79 +76,79 @@ function mfswp_get_modern_font_stacks() {
 
 	$modern_font_stacks = array (
 		array (
-			'fontFamily' => "system-ui, sans-serif",
-			'name' => "System UI",
-			'slug' => "mfswp-system-ui"
+			'fontFamily' => 'system-ui, sans-serif',
+			'name' => 'System UI',
+			'slug' => 'mfswp-system-ui'
 		),
 		array (
-			'fontFamily' => "Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif",
-			'name' => "Transitional",
-			'slug' => "mfswp-transitional"
+			'fontFamily' => 'Charter, "Bitstream Charter", "Sitka Text", Cambria, serif',
+			'name' => 'Transitional',
+			'slug' => 'mfswp-transitional'
 		),
 		array (
-			'fontFamily' => "'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif",
-			'name' => "Old Style",
-			'slug' => "mfswp-old-style"
+			'fontFamily' => '"Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif',
+			'name' => 'Old Style',
+			'slug' => 'mfswp-old-style'
 		),
 		array(
-			'fontFamily' => "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif",
-			'name' => "Humanist",
-			'slug' => "mfswp-humanist"
+			'fontFamily' => 'Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro, sans-serif',
+			'name' => 'Humanist',
+			'slug' => 'mfswp-humanist'
 		),
 		array(
-			'fontFamily' => "Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif",
-			'name' => "Geometric Humanist",
-			'slug' => "mfswp-geometric-humanist"
+			'fontFamily' => 'Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro, sans-serif',
+			'name' => 'Geometric Humanist',
+			'slug' => 'mfswp-geometric-humanist'
 		),
 		array(
-			'fontFamily' => "Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif",
-			'name' => "Classical Humanist",
-			'slug' => "mfswp-classical-humanist"
+			'fontFamily' => 'Optima, Candara, "Noto Sans", source-sans-pro, sans-serif',
+			'name' => 'Classical Humanist',
+			'slug' => 'mfswp-classical-humanist'
 		),
 		array(
-			'fontFamily' => "Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif",
-			'name' => "Neo-Grotesque",
-			'slug' => "mfswp-neo-grotesque"
+			'fontFamily' => 'Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif',
+			'name' => 'Neo-Grotesque',
+			'slug' => 'mfswp-neo-grotesque'
 		),
 		array(
-			'fontFamily' => "'Nimbus Mono PS', 'Courier New', monospace",
-			'name' => "Monospace Slab Serif",
-			'slug' => "mfswp-monospace-slab-serif"
+			'fontFamily' => '"Nimbus Mono PS", "Courier New", monospace',
+			'name' => 'Monospace Slab Serif',
+			'slug' => 'mfswp-monospace-slab-serif'
 		),
 		array(
-			'fontFamily' => "ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace",
-			'name' => "Monospace Code",
-			'slug' => "mfswp-monospace-code"
+			'fontFamily' => 'ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace',
+			'name' => 'Monospace Code',
+			'slug' => 'mfswp-monospace-code'
 		),
 		array(
-			'fontFamily' => "Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif",
-			'name' => "Industrial",
-			'slug' => "mfswp-industrial"
+			'fontFamily' => 'Bahnschrift, "DIN Alternate", "Franklin Gothic Medium", "Nimbus Sans Narrow", sans-serif-condensed, sans-serif',
+			'name' => 'Industrial',
+			'slug' => 'mfswp-industrial'
 		),
 		array(
-			'fontFamily' => "ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif",
-			'name' => "Rounded Sans",
-			'slug' => "mfswp-rounded-sans"
+			'fontFamily' => 'ui-rounded, "Hiragino Maru Gothic ProN", Quicksand, Comfortaa, Manjari, "Arial Rounded MT", "Arial Rounded MT Bold", Calibri, source-sans-pro, sans-serif',
+			'name' => 'Rounded Sans',
+			'slug' => 'mfswp-rounded-sans'
 		),
 		array(
-			'fontFamily' => "Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif",
-			'name' => "Slab Serif",
-			'slug' => "mfswp-slab-serif"
+			'fontFamily' => 'Rockwell, "Rockwell Nova", "Roboto Slab", "DejaVu Serif", "Sitka Small", serif',
+			'name' => 'Slab Serif',
+			'slug' => 'mfswp-slab-serif'
 		),
 		array(
-			'fontFamily' => "Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif",
-			'name' => "Antique",
-			'slug' => "mfswp-antique"
+			'fontFamily' => 'Superclarendon, "Bookman Old Style", "URW Bookman", "URW Bookman L", "Georgia Pro", Georgia, serif',
+			'name' => 'Antique',
+			'slug' => 'mfswp-antique'
 		),
 		array(
-			'fontFamily' => "Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif",
-			'name' => "Didone",
-			'slug' => "mfswp-didone"
+			'fontFamily' => 'Didot, "Bodoni MT", "Noto Serif Display", "URW Palladio L", P052, Sylfaen, serif',
+			'name' => 'Didone',
+			'slug' => 'mfswp-didone'
 		),
 		array(
-			'fontFamily' => "'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive",
-			'name' => "Handwritten",
-			'slug' => "mfswp-handwritten"
+			'fontFamily' => '"Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual, cursive',
+			'name' => 'Handwritten',
+			'slug' => 'mfswp-handwritten'
 		)
 	);
 
