@@ -28,7 +28,7 @@ function mfswp_add_modern_font_stacks( $theme_json ) {
 	// get current theme.json data
 	$current_data = $theme_json->get_data();
 
-	// bail if theme.json version is not 2 (TODO: maybe show an admin notice that the plugin does not work?)
+	// bail if theme.json version is not version 2 (TODO: maybe show an admin notice that the plugin does not work?)
 	if ( empty( $current_data ) || ! isset( $current_data['version'] ) || ( $current_data['version'] !== 2 ) ) return $theme_json;
 
 	// get currently available font families
@@ -42,7 +42,7 @@ function mfswp_add_modern_font_stacks( $theme_json ) {
 		$font_families = array_merge( $current_font_families, $font_families );
 	}
 	
-	// add font familes to json structure
+	// add font families to json structure
 	$new_data = array (
 		'version'  => 2,
 		'settings' => array (
