@@ -34,7 +34,7 @@ function mfswp_add_modern_font_stacks( $theme_json ) {
 	}
 
 	// merge current font families with the modern font stacks
-	$font_families = array_merge( $current_data['settings']['typography']['fontFamilies']['theme'], mfswp_get_modern_font_stacks() );
+	$font_families = array_merge( $current_data['settings']['typography']['fontFamilies'], mfswp_get_modern_font_stacks() );
 	
 	// add font families to json structure
 	$new_data = array (
