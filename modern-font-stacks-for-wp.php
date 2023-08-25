@@ -32,7 +32,7 @@ function mfswp_add_modern_font_stacks( $theme_json ) {
 	if ( empty( $current_data ) || ! isset( $current_data['version'] ) || ( $current_data['version'] !== 2 ) ) return $theme_json;
 
 	// get currently available font families
-	$current_font_families = $current_data['settings']['typography']['fontFamilies']['theme'];
+	$current_font_families = $current_data['settings']['typography']['fontFamilies'];
 
 	// create the modern font stacks
 	$font_families = mfswp_get_modern_font_stacks();
