@@ -15,7 +15,7 @@
  * @package mfswp
  */
 
-/*
+/**
  * Add fonts to available fonts in themes with a theme_json file
  *
  * @since 1.0
@@ -59,7 +59,7 @@ function mfswp_apply_theme_json_theme_filter() {
 }
 add_action( 'after_setup_theme', 'mfswp_apply_theme_json_theme_filter' );
 
-/*
+/**
  * Modern Font Stacks from https://modernfontstacks.com or https://github.com/system-fonts/modern-font-stacks
  *
  * @license CC0 1.0 Universal https://creativecommons.org/share-your-work/public-domain/cc0/
