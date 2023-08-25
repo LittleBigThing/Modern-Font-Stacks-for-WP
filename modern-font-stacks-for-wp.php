@@ -20,8 +20,8 @@
  *
  * @since 1.0
  * 
- * @param object $theme_json The original theme JSON data.
- * @return object The modified theme JSON data.
+ * @param WP_Theme_JSON_Data $theme_json The original theme JSON data.
+ * @return WP_Theme_JSON_Data The modified theme JSON data.
  */
 function mfswp_add_modern_font_stacks( $theme_json ) {
 	
@@ -29,18 +29,12 @@ function mfswp_add_modern_font_stacks( $theme_json ) {
 	$current_data = $theme_json->get_data();
 
 	// bail if theme.json version is not version 2 (TODO: maybe show an admin notice that the plugin does not work?)
-	if ( empty( $current_data ) || ! isset( $current_data['version'] ) || ( $current_data['version'] !== 2 ) ) return $theme_json;
-
-	// get currently available font families
-	$current_font_families = $current_data['settings']['typography']['fontFamilies']['theme'];
-
-	// create the modern font stacks
-	$font_families = mfswp_get_modern_font_stacks();
-
-	// merge all font families
-	if ( is_array( $current_font_families ) ) {
-		$font_families = array_merge( $current_font_families, $font_families );
+	if ( ! isset( $current_data['version'] ) || $current_data['version'] !== 2 ) {
+		return $theme_json;
 	}
+
+	// merge current font families with the modern font stacks
+	$font_families = array_merge( $current_data['settings']['typography']['fontFamilies']['theme'], mfswp_get_modern_font_stacks() );
 	
 	// add font families to json structure
 	$new_data = array (
@@ -74,7 +68,7 @@ add_action( 'after_setup_theme', 'mfswp_apply_theme_json_theme_filter' );
  */
 function mfswp_get_modern_font_stacks() {
 
-	$modern_font_stacks = array (
+	return array (
 		array (
 			'fontFamily' => 'system-ui, sans-serif',
 			'name' => 'System UI',
@@ -151,6 +145,4 @@ function mfswp_get_modern_font_stacks() {
 			'slug' => 'mfswp-handwritten'
 		)
 	);
-
-	return $modern_font_stacks;
 }
