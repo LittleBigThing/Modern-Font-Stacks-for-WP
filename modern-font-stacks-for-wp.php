@@ -15,13 +15,13 @@
  * @package mfswp
  */
 
-/*
+/**
  * Add fonts to available fonts in themes with a theme_json file
  *
  * @since 1.0
  * 
- * @param object $theme_json The original theme JSON data.
- * @return object The modified theme JSON data.
+ * @param WP_Theme_JSON_Data $theme_json The original theme JSON data.
+ * @return WP_Theme_JSON_Data The modified theme JSON data.
  */
 function mfswp_add_modern_font_stacks( $theme_json ) {
 	
@@ -65,7 +65,7 @@ function mfswp_apply_theme_json_theme_filter() {
 }
 add_action( 'after_setup_theme', 'mfswp_apply_theme_json_theme_filter' );
 
-/*
+/**
  * Modern Font Stacks from https://modernfontstacks.com or https://github.com/system-fonts/modern-font-stacks
  *
  * @license CC0 1.0 Universal https://creativecommons.org/share-your-work/public-domain/cc0/
