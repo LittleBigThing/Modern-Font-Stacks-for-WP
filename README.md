@@ -4,7 +4,6 @@ This plugin adds a collection of font stacks to WordPress themes that have a ``t
 
 The stacks originate from the [Modern Font Stacks](https://modernfontstacks.com), a passion project of [Dan Klammer](https://danklammer.com). The following font stacks are available:
 
-* System UI
 * Transitional
 * Old styles
 * Humanist

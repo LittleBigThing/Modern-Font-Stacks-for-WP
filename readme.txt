@@ -15,7 +15,6 @@ The plugin makes [Modern Font Stacks](https://modernfontstacks.com) available in
 
 The currently available font stacks are:
 
-* System UI
 * Transitional
 * Old styles
 * Humanist
