@@ -10,9 +10,9 @@
  * Author URI: https://littlebigthings.be
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- * Text Domain: mfswp
+ * Text Domain: modern-font-stacks-for-wp
  *
- * @package mfswp
+ * @package modern-font-stacks-for-wp
  */
 
 /**
