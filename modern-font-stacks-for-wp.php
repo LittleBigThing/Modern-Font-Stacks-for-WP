@@ -1,18 +1,18 @@
 <?php
 /**
  * Plugin Name: Modern Font Stacks for WP
- * Plugin URI: https://csaba.blog/modern-font-stacks-for-wordpress
- * Description: This lightweight plugin integrates the Modern Font Stacks project into WordPress. These are system font stacks organized by typeface classification for every modern OS. The fastest fonts available. No downloading, no layout shifts, no flashes — just instant renders.
- * Requires at least: 6.5
- * Requires PHP: 7.0
- * Version: 2.0
+ * Plugin URI: https://csaba.blog/modern-font-stacks-in-wordpress
+ * Description: This lightweight plugin integrates the Modern Font Stacks project into WordPress (block) themes. These are system font stacks organized by typeface classification for every modern OS. The fastest fonts available. No downloading, no layout shifts, no flashes — just instant renders.
+ * Requires at least: 6.2
+ * Requires PHP: 5.6
+ * Version: 1.0
  * Author: LittleBigThings
  * Author URI: https://littlebigthings.be
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- * Text Domain: modern-font-stacks-for-wp
+ * Text Domain: mfswp
  *
- * @package modern-font-stacks-for-wp
+ * @package mfswp
  */
 
 /**
