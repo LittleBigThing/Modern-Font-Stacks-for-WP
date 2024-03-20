@@ -11,7 +11,7 @@ Tags:              sustainability, fonts, webfonts, font families
 
 == Description ==
 
-The plugin makes [Modern Font Stacks](https://modernfontstacks.com) available in WordPress block themes. Using these clever stacks of system fonts, which are available on the operating system without the need to download them, will make your website light and load faster.
+The plugin makes [Modern Font Stacks](https://modernfontstacks.com) available in the WordPress Font Library. Using these clever stacks of system fonts, which are available on the operating system without the need to download them, will make your website light and load faster.
 
 The currently available font stacks are:
 
