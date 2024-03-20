@@ -18,7 +18,9 @@ namespace ModernFontStacksforWP;
 class FontCollection {
 
 	/**
-	 * Generate the font stacks.
+	 * Generate the stacks based on Modern Font Stacks from https://modernfontstacks.com or https://github.com/system-fonts/modern-font-stacks.
+	 *
+	 * @license CC0 1.0 Universal https://creativecommons.org/share-your-work/public-domain/cc0/
 	 *
 	 * @access public
 	 * @since 2.0
