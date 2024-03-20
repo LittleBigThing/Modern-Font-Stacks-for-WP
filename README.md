@@ -21,5 +21,4 @@ The stacks originate from the [Modern Font Stacks](https://modernfontstacks.com)
 
 See the [repository of the project](https://github.com/system-fonts/modern-font-stacks) to preview the stacks.
 
-![WordPress example Transition font stack](https://github.com/LittleBigThing/Modern-Font-Stacks-for-WP/assets/5901923/7230c7c1-7758-4d23-928c-2bccf1658eba)
-
+<img width="918" alt="screenshot-font-library-collection" src="https://github.com/LittleBigThing/Modern-Font-Stacks-for-WP/assets/5901923/7247104e-3b82-45ba-aaa8-b9a107adb5dd">
