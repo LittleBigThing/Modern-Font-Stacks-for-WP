@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Modern Font Stacks for WP
  * Plugin URI: https://csaba.blog/modern-font-stacks-for-wordpress
- * Description: This lightweight plugin integrates the Modern Font Stacks project into WordPress (block) themes. These are system font stacks organized by typeface classification for every modern OS. The fastest fonts available. No downloading, no layout shifts, no flashes — just instant renders.
+ * Description: This lightweight plugin integrates the Modern Font Stacks project into the WordPress Font Library. These are system font stacks organized by typeface classification for every modern OS. The fastest fonts available. No downloading, no layout shifts, no flashes — just instant renders.
  * Requires at least: 6.5
  * Requires PHP: 7.0
  * Version: 2.0
@@ -211,6 +211,12 @@ class FontCollection {
 		];
 	}
 
+	/**
+	 * Configurate loading the stacks.
+	 *
+	 * @access public
+	 * @since 2.0
+	 */
 	public function config() {
 
 		return array (
